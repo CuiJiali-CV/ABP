@@ -27,6 +27,11 @@
 ## Quick Start
 
 * Run train.py and the result will be stored in output
+* The hyper params are already set up in train.py. 
+    * theta is the param in loss. Smaller theta often means less difference allowed between true image and reproduce.<br />
+    * delta is the param in langevin dynamic. it is the param that means how far for one time langevin dynamic process can walk for one step. Normally, in warm start, I won't suggest set this param too big. However, it is really interesting to see how the theta and delta working together on the model.<br />
+    
+* The number of trainning images can be set up in loadData.py. Just simply change num to any number of images you want to train
 <br /><br />
 ## Version of Installment
 #### Tensorflow 1.13.1
